@@ -1,0 +1,126 @@
+[
+    {
+        "name": "node-js",
+        "repository": "https://github.com/redknight990/template-node-js",
+        "variables": [
+            {
+                "name": "APP_NAME",
+                "prompt": "App name",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "DB_NAME",
+                "prompt": "Database name ({{ APP_NAME }})",
+                "type": "text",
+                "default": "{{ APP_NAME }}"
+            },
+            {
+                "name": "DB_TYPE",
+                "prompt": "Database engine (mssql)",
+                "type": "select",
+                "options": [
+                    "mssql", "mysql", "mysql2", "pg", "sqlite3", "oracledb"
+                ],
+                "default": "mssql"
+            },
+            {
+                "name": "DB_HOST",
+                "prompt": "Database host address (localhost)",
+                "type": "text",
+                "default": "localhost"
+            },
+            {
+                "name": "DB_PORT",
+                "prompt": "Database port (1433)",
+                "type": "number",
+                "default": 1443
+            },
+            {
+                "name": "DB_USER",
+                "prompt": "Database user (root)",
+                "type": "text",
+                "default": "root"
+            },
+            {
+                "name": "DB_PASS",
+                "prompt": "Database password (none)",
+                "type": "text",
+                "default": ""
+            },
+            {
+                "name": "AUTH_SECRET",
+                "generate": "base64",
+                "length": 64
+            }
+        ],
+        "extra_dependencies": [
+            "{{ DB_TYPE }}"
+        ],
+        "create_directories": [
+            "templates"
+        ]
+    },
+    {
+        "name": "node-ts",
+        "repository": "https://github.com/redknight990/template-node-ts",
+        "variables": [
+            {
+                "name": "APP_NAME",
+                "prompt": "App name",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "DB_NAME",
+                "prompt": "Database name ({{ APP_NAME }})",
+                "type": "text",
+                "default": "{{ APP_NAME }}"
+            },
+            {
+                "name": "DB_TYPE",
+                "prompt": "Database engine (mssql)",
+                "type": "select",
+                "options": [
+                    "mssql", "mysql", "mysql2", "pg", "sqlite3", "oracledb"
+                ],
+                "default": "mssql"
+            },
+            {
+                "name": "DB_HOST",
+                "prompt": "Database host address (localhost)",
+                "type": "text",
+                "default": "localhost"
+            },
+            {
+                "name": "DB_PORT",
+                "prompt": "Database port (1433)",
+                "type": "number",
+                "default": 1443
+            },
+            {
+                "name": "DB_USER",
+                "prompt": "Database user (root)",
+                "type": "text",
+                "default": "root"
+            },
+            {
+                "name": "DB_PASS",
+                "prompt": "Database password (none)",
+                "type": "text",
+                "default": ""
+            },
+            {
+                "name": "AUTH_SECRET",
+                "generate": "base64",
+                "length": 64
+            }
+        ],
+        "extra_dependencies": [
+            "{{ DB_TYPE }}"
+        ],
+        "create_directories": [
+            "templates"
+        ]
+    }
+]
