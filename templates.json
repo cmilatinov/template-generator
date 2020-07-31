@@ -34,7 +34,7 @@
                 "name": "DB_PORT",
                 "prompt": "Database port (1433)",
                 "type": "number",
-                "default": 1443
+                "default": 1433
             },
             {
                 "name": "DB_USER",
@@ -96,7 +96,7 @@
                 "name": "DB_PORT",
                 "prompt": "Database port (1433)",
                 "type": "number",
-                "default": 1443
+                "default": 1433
             },
             {
                 "name": "DB_USER",
