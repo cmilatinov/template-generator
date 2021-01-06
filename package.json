@@ -4,7 +4,7 @@
         "tgen": "./index.js"
     },
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bluebird": "^3.7.2",
         "colors": "^1.4.0",
         "command-line-args": "^5.1.1",
